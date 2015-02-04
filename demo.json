@@ -21,27 +21,14 @@
         "resp_time": 6900
       }
     },
-    "user-logins": [
-      {
-        "id": 1,
-        "username": "user_1",
-        "password": "p2"
-      },
-      {
-        "id": 2,
-        "username": "user_2",
-        "password": "p2"
-      }
-    ],
     "common-headers": {
       "X-Custom-Header": "custom header value"
     },
-    "common-login-id": 1,
     "urls": [
       {
         "url": "http://demotour.blazemeter.com/",
         "headers": {
-          "Host": "vitali.a.blazemeter.com",
+          "Host": "demotour.blazemeter.com",
           "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36"
         },
        "thresholds": {
@@ -54,20 +41,7 @@
             "pctl": 99,
             "resp_time": 4900
           }
-        },
-        "login_id": 2
-      },
-      {
-        "url": "http://demotour.blazemeter.com/",
-        "method":"POST",
-        "body":"How much is the fish?",
-        "headers": {
-          "Accept-Charset": "ISO-8859-1"
         }
-      },
-      {
-        "url": "http://demotour.blazemeter.com/",
-        "login_id": 2
       }
     ]
   }
