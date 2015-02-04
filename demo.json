@@ -1,0 +1,74 @@
+{
+  "test": {
+    "name": "Jenkins JSON Demno",
+    "location": "eu-west-1",
+    "duration": 5, 
+    "rps": 10,
+    "rps_step_up": {
+      "start_rps": 1,
+      "end_rps": 10,
+      "step_increment": 1,
+      "step_duration": 1
+    },
+    "thresholds": {
+      "avg_resp_time": 3000,
+      "max_resp_time": 8000,
+      "90_pctl_resp_time": 5700,
+      "avg_latency": 900,
+      "error_rate": 0.5,
+      "resp_time_pctl": {
+        "pctl": 99,
+        "resp_time": 6900
+      }
+    },
+    "user-logins": [
+      {
+        "id": 1,
+        "username": "user_1",
+        "password": "p2"
+      },
+      {
+        "id": 2,
+        "username": "user_2",
+        "password": "p2"
+      }
+    ],
+    "common-headers": {
+      "X-Custom-Header": "custom header value"
+    },
+    "common-login-id": 1,
+    "urls": [
+      {
+        "url": "http://demotour.blazemeter.com/",
+        "headers": {
+          "Host": "vitali.a.blazemeter.com",
+          "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36"
+        },
+       "thresholds": {
+          "avg_resp_time": 1500,
+          "max_resp_time": 3000,
+          "90_pctl_resp_time": 3700,
+          "avg_latency": 900,
+          "error_rate": 0.5,
+          "resp_time_pctl": {
+            "pctl": 99,
+            "resp_time": 4900
+          }
+        },
+        "login_id": 2
+      },
+      {
+        "url": "http://demotour.blazemeter.com/",
+        "method":"POST",
+        "body":"How much is the fish?",
+        "headers": {
+          "Accept-Charset": "ISO-8859-1"
+        }
+      },
+      {
+        "url": "http://demotour.blazemeter.com/",
+        "login_id": 2
+      }
+    ]
+  }
+}
