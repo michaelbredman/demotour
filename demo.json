@@ -1,9 +1,9 @@
 {
   "test": {
-    "name": "Jenkins JSON Demo (Meetup)",
+    "name": "Jenkins JSON Demo Meetup",
     "location": "eu-west-1",
     "duration": 5, 
-    "rps": 20,
+    "rps": 10,
     "rps_step_up": {
       "start_rps": 1,
       "end_rps": 10,
@@ -11,8 +11,8 @@
       "step_duration": 1
     },
     "thresholds": {
-      "avg_resp_time": 1000,
-      "max_resp_time": 2000,
+      "avg_resp_time": 3000,
+      "max_resp_time": 8000,
       "90_pctl_resp_time": 5700,
       "avg_latency": 900,
       "error_rate": 0.5,
