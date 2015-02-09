@@ -1,6 +1,6 @@
 {
   "test": {
-    "name": "Jenkins JSON Demo Meetup Hi",
+    "name": "Jenkins JSON Demotour",
     "location": "eu-west-1",
     "duration": 5, 
     "rps": 10,
