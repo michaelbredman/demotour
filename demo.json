@@ -1,6 +1,6 @@
 {
   "test": {
-    "name": "Jenkins JSON Walmart",
+    "name": "Jenkins JSON",
     "location": "eu-west-1",
     "duration": 12, 
     "rps": 30,
