@@ -3,7 +3,7 @@
     "name": "Jenkins JSON",
     "location": "eu-west-1",
     "duration": 12, 
-    "rps": 30,
+    "rps": 60,
     "rps_step_up": {
       "start_rps": 1,
       "end_rps": 10,
